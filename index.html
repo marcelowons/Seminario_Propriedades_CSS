@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulários com CSS</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        article {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 10px;
+            font-size: 17px;
+        }
+
+        code {
+            background-color: lightgray;
+            padding: 2px 5px;
+            font-family: monospace;
+            font-size: 17px;
+        }
+
+        footer {
+            color: green;
+            padding: 20px;
+            text-align: center;
+            font-size: 17px;
+        }
+    </style>
+
+</head>
+<body>
+<h1>Propriedades CSS: Formulários</h1>
+
+<div>
+
+<article>
+    <p>1. Um formulário do tipo <code>text</code> define um campo de entrada de texto de linha única.</p>
+    <p>Exemplo:</p>
+</article>
+
+<form>
+  <label for="name">Nome</label>
+  <input type="text" id="name" name="name">
+  <label for="sobrenome">Sobrenome</label>
+  <input type="text" id="sobrenome" name="sobrenome">
+</form>
+
+</div>
+
+<div>
+
+<article>
+    <p>2. Um formulário do tipo <code>radio</code> define um campo de entrada de opção única.</p>
+    <p>Exemplo:</p>
+</article>
+
+<form>
+  <input type="radio" id="html" name="language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+
+</div>
+
+<div>
+
+<article>
+    <p>3. Um formulário do tipo <code>checkbox</code> define um campo de entrada de opções múltiplas.</p>
+    <p>Exemplo:</p>
+</article>
+
+<form>
+  <input type="checkbox" id="html" name="language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="checkbox" id="css" name="language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="checkbox" id="javascript" name="language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+
+</div>
+
+<div>
+
+<article>
+    <p>4. Um formulário do tipo <code>textarea</code> define um campo de entrada de texto de múltiplas linhas.</p>
+    <p>Exemplo:</p>
+</article>
+
+<form>
+  <label for="message">Mensagem</label>
+  <textarea id="message" name="message" rows="4" cols="50"></textarea>
+</form>
+
+</div>
+
+<div>
+
+<article>
+    <p>5. Um formulário com a tag <code>select</code> define um campo de entrada de opções múltiplas.</p>
+    <p>Exemplo:</p>
+</article>
+
+<form>
+  <label for="web">Escolha uma das opções:</label>
+  <select id="web" name="web">
+    <option value="html">Python</option>
+    <option value="css">C++</option>
+    <option value="javascript">JavaScript</option>
+  </select>
+</form>
+
+</div>
+
+<h2>1. Width - Campos de entrada com larguras variáveis</h2>
+
+<article>
+    <p>A propriedade <code>width</code> define a largura horizontal do campo de entrada.
+         Ele pode ser especificado em pixels ou porcentagem</p>
+    <p>Exemplos:</p>
+    <ul>
+        <li><code>width: 100%;</code>: O campo ocupa toda a largura disponível da tela ou do elemento pai.</li>
+        <li><code>width: 80%;</code>: O campo ocupa 80% da largura disponível.</li>
+        <li><code>width: 50%;</code>: O campo ocupa 50% da largura disponível.</li>
+        <li><code>width: 200px;</code>: O campo tem 200 pixels de largura.</li>
+    </ul>
+</article>
+
+<form>
+  <label for="pname">Primeiro Nome</label>
+  <input type="text" id="pname" name="pname">
+</form>
+
+<br>
+
+<form>
+  <label for="pname">Primeiro Nome</label>
+  <input style="width:100%;" type="text" id="pname" name="pname">
+</form>
+
+<br>
+
+<form>
+  <label for="pname">Primeiro Nome</label>
+  <input style="width:80%;" type="text" id="pname" name="pname">
+</form>
+
+<br>
+
+<form>
+  <label for="pname">Primeiro Nome</label>
+  <input style="width:50%;" type="text" id="pname" name="pname">
+</form>
+
+<form>
+  <label for="pname">Primeiro Nome</label>
+  <input style="width: 200px;" type="text" id="pname" name="pname">
+</form>
+
+<h2>2. Padding - Campos de entrada com espaçamento interno</h2>
+
+<article>
+    <p>A propriedade <code>padding</code> define o espaçamento interno do campo de entrada.
+         Ele pode ser especificado em pixels</p>
+    <p>Exemplos:</p>
+    <ul>
+        <li><code>padding: 10px;</code>: O campo tem 10 pixels de espaçamento interno em todas as direções.</li>
+        <li><code>padding: 20px;</code>: O campo tem 20 pixels de espaçamento interno em todas as direções.</li>
+    </ul>
+</article>
+
+<form>
+  <label for="name">Nome</label>
+  <input type="text" id="name" name="name">
+  <label for="sobrenome">Sobrenome</label>
+  <input type="text" id="sobrenome" name="sobrenome">
+</form>
+
+<br>
+
+<form>
+  <label for="name">Nome</label>
+  <input style="padding:10px;" type="text" id="name" name="name">
+  <label for="sobrenome">Sobrenome</label>
+  <input style="padding:10px;" type="text" id="sobrenome" name="sobrenome">
+</form>
+
+<br>
+
+<form>
+  <label for="name">Nome</label>
+  <input style="padding:20px;" type="text" id="name" name="name">
+  <label for="sobrenome">Sobrenome</label>
+  <input style="padding:20px;" type="text" id="sobrenome" name="sobrenome">
+</form>
+
+<h2>3. Margin - Campos de entrada com espaçamento externo</h2>
+
+<article>
+    <p>A propriedade <code>margin</code> define o espaçamento externo do campo de entrada.
+         Ele pode ser especificado em pixels</p>
+    <p>Exemplos:</p>
+    <ul>
+        <li><code>margin: 10px;</code>: O campo tem 10 pixels de espaçamento externo em todas as direções.</li>
+        <li><code>margin: 20px;</code>: O campo tem 20 pixels de espaçamento externo em todas as direções.</li>
+    </ul>
+</article>
+
+<form class="container">
+  <label for="name">Nome</label>
+  <input type="text" id="name" name="name">
+  <label for="sobrenome">Sobrenome</label>
+  <input type="text" id="sobrenome" name="sobrenome">
+</form>
+
+<br>
+
+<form class="container">
+  <label for="name">Nome</label>
+  <input style="margin:10px;" type="text" id="name" name="name">
+  <label for="sobrenome">Sobrenome</label>
+  <input style="margin:10px;" type="text" id="sobrenome" name="sobrenome">
+</form>
+
+<form class="container">
+  <label for="name">Nome</label>
+  <input style="margin:20px;" type="text" id="name" name="name">
+  <label for="sobrenome">Sobrenome</label>
+  <input style="margin:20px;" type="text" id="sobrenome" name="sobrenome">
+</form>
+
+<h2>4. Border - Campos de entrada com bordas</h2>
+
+<div>
+
+<article>
+    <p>A propriedade <code>border</code> define a borda do campo de entrada.
+         Ela pode ser especificada com largura, estilo e cor</p>
+    <p>Exemplos:</p>
+    <ul>
+        <li><code>border: 2px solid blue;</code>: O campo tem uma borda azul com 2 pixels de largura.</li>
+        <li><code>border: 6px solid green;</code>: O campo tem uma borda verde com 6 pixels de largura.</li>
+        <li><code>border: 6px dotted red;</code>: O campo tem uma borda vermelha pontilhada com 6 pixels de largura.</li>
+
+    </ul>
+</article>
+
+<form>
+  <label for="name">Nome</label>
+  <input type="text" id="name" name="name">
+</form>
+
+<br>
+
+<form>
+  <label for="name">Nome</label>
+  <input style="border:2px solid blue" type="text" id="name" name="name">
+</form>
+
+<br>
+
+<form>
+  <label for="name">Nome</label>
+  <input style="border:6px solid green" type="text" id="name" name="name">
+</form>
+
+<br>
+
+<form>
+  <label for="name">Nome</label>
+  <input style="border:6px dotted red" type="text" id="name" name="name">
+</form>
+
+</div>
+
+<h2>5. Border-radius - Campos de entrada com cantos arredondados</h2>
+
+<article>
+    <p>A propriedade <code>border-radius</code> define os cantos arredondados do campo de entrada.
+         Ela pode ser especificada com um valor em pixels</p>
+    <p>Exemplos:</p>
+    <ul>
+        <li><code>border-radius: 5px;</code>: O campo tem cantos arredondados com 5 pixels de raio.</li>
+        <li><code>border-radius: 10px;</code>: O campo tem cantos arredondados com 10 pixels de raio.</li>
+
+    </ul>
+</article>
+
+
+<form>
+  <label for="name">Nome</label>
+  <input style="border-radius: 5px;" type="text" id="name" name="name">
+</form>
+
+<br>
+
+<form>
+  <label for="name">Nome</label>
+  <input style="border-radius: 10px;" type="text" id="name" name="name">
+</form>
+
+  <h2>6. Background-color - Campos de entrada com cor de fundo</h2>
+
+  <div>
+
+  <article>
+    <p>A propriedade <code>background-color</code> define a cor de fundo do campo de entrada.</p>
+    <p>Exemplos:</p>
+    <ul>
+        <li><code>background-color: lightblue;</code>: O campo tem um fundo azul claro.</li>
+        <li><code>background-color: lightgreen;</code>: O campo tem um fundo verde claro.</li>
+
+    </ul>
+</article>
+
+  <form>
+    <label for="name">Nome</label>
+    <input style="background-color: lightblue;" type="text" id="name" name="name">
+  </form>
+
+  <br>
+
+    <form>
+        <label for="name">Nome</label>
+        <input style="background-color: lightgreen;" type="text" id="name" name="name">
+    </form>
+
+    </div>
+
+    <h2>7. Color - Campos de entrada com cor do texto</h2>
+
+    <article>
+    <p>A propriedade <code>color</code> define a cor do texto do campo de entrada.</p>
+    <p>Exemplos:</p>
+    <ul>
+        <li><code>color: red;</code>: O texto tem cor vermelha.</li>
+        <li><code>color: blue;</code>: O texto tem cor azul.</li>
+
+    </ul>
+</article>
+
+    <form>
+        <label for="name">Nome</label>
+        <input style="color: red;" type="text" id="name" name="name">
+    </form>
+
+    <br>
+
+    <form>
+        <label for="name">Nome</label>
+        <input style="color: blue;" type="text" id="name" name="name">
+    </form>
+
+<h2>8. Font-size - Campos de entrada com tamanho da fonte</h2>
+
+<article>
+    <p>A propriedade <code>font-size</code> define o tamanho da fonte do texto do campo de entrada.</p>
+    <p>Exemplos:</p>
+    <ul>
+        <li><code>font-size: 20px;</code>: O texto tem tamanho de 20 pixels.</li>
+        <li><code>font-size: 40px;</code>: O texto tem tamanho de 40 pixels.</li>
+
+    </ul>
+</article>
+
+<form>
+    <label for="name">Nome</label>
+    <input style="font-size: 20px;" type="text" id="name" name="name">
+</form>
+
+<br>
+
+<form>
+    <label for="name">Nome</label>
+    <input style="font-size: 40px;" type="text" id="name" name="name">
+</form>
+
+<div>
+
+<h2>Checkbox com estilo</h2>
+
+    <form class="box">
+        <input type="checkbox" id="html" name="language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="javascript" name="language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+
+    </div>
+
+    <div>
+
+    <h2>Radio com estilo</h2>
+    <form class="radio">
+        <input type="radio" id="html" name="language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+
+    </div>
+
+    <div>
+
+    <h2>Elemento select</h2>
+
+    <form class="select">
+        <label for="language">Escolha uma linguagem de programação:</label>
+        <select id="language" name="language">
+            <option value="html">Python</option>
+            <option value="css">C++</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+    </form>
+
+    </div>
+
+<footer>
+    <p>Exemplos de propriedades CSS aplicadas a formulários.</p>
+</footer>
+
+</body>
+</html>
